@@ -1,0 +1,19 @@
+ou're on a 64-bit system, and don't have 32-bit library support installed.
+
+To install (baseline) support for 32-bit executables
+
+Most desktop Linux systems in the Fedora/Red Hat family:
+
+ pkcon install glibc.i686
+Possibly some desktop Debian/Ubuntu systems?:
+
+pkcon install ia32-libs
+Fedora or newer Red Hat, CentOS:
+
+ sudo dnf install glibc.i686
+Older RHEL, CentOS:
+
+   sudo yum install glibc.i686
+Even older RHEL, CentOS:
+
+  sudo yum install glibc.i386
