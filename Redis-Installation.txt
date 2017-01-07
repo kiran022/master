@@ -1,0 +1,24 @@
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-6.rpm
+
+yum --enablerepo=remi,remi-test install redis 
+
+
+
+
+
+#To check whether the installation completed successfully 
+
+redis-cli ping   
+
+# The result should be PONG. Then installation successful
+
+
+
+# Master - Slave 
+http://bencane.com/2013/11/12/installing-redis-and-setting-up-master-slave-replication/
+
+############################ redis-3.0.7 ############################
+rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+yum --enablerepo=remi install redis
+vi /etc/redis.conf
